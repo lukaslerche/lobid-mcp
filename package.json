@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "MCP server for lobid-gnd authority data",
   "license": "MIT",
-  "repository": "lukaslerche/lobid-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaslerche/lobid-mcp.git"
+  },
   "author": {
     "name": "Lukas Lerche",
     "email": "lukas.lerche@tu-dortmund.de",
@@ -11,7 +14,7 @@
   },
   "type": "module",
   "bin": {
-    "lobid-mcp": "./build/index.js"
+    "lobid-mcp": "build/index.js"
   },
   "files": [
     "build",
