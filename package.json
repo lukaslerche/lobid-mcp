@@ -2,11 +2,36 @@
   "name": "lobid-mcp",
   "version": "1.0.0",
   "description": "MCP server for lobid-gnd authority data",
+  "bin": {
+    "lobid-mcp": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
     "dev": "tsx watch src/index.ts"
   },
+  "keywords": [
+    "mcp",
+    "gnd",
+    "lobid",
+    "llm",
+    "authority-data",
+    "claude",
+    "opencode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaslerche/lobid-mcp.git"
+  },
+  "homepage": "https://github.com/lukaslerche/lobid-mcp",
   "license": "ISC",
   "type": "module",
   "dependencies": {
