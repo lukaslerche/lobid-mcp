@@ -29,7 +29,7 @@ server.registerTool(
   "match_gnd_entities",
   {
     description:
-      "Search the GND authority ecosystem for plausible entities matching one or more names, concepts, subjects, organizations, places, or works. Use this tool first when resolving ambiguous terms against the GND.",
+      "Search the GND authority ecosystem for plausible entities matching one or more names, concepts, subjects, organizations, places, or works. Use this tool first when resolving ambiguous terms against the GND. If no useful candidates are returned, retry with alternative spellings, singular forms, or related concepts.",
     inputSchema: z.object({
       terms: z.array(z.string().min(1).max(200)).min(1).max(50).describe("Research terms to match against GND"),
       limitPerTerm: z.number().min(1).max(20).optional().default(5),
